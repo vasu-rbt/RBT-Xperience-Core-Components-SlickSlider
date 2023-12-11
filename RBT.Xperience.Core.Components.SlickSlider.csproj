@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Components\Widgets\HeroSlickSlider\_HeroSlickSlider.cshtml" />
+    <Content Remove="Components\Widgets\HeroSlickSlider\_SliderCenterLayout.cshtml" />
+    <Content Remove="Components\Widgets\HeroSlickSlider\_SliderLeftLayout.cshtml" />
+    <Content Remove="Components\Widgets\HeroSlickSlider\_YearSliderLayout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.64" />
+  </ItemGroup>
+
+</Project>

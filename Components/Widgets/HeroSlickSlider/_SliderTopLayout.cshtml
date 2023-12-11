@@ -1,0 +1,24 @@
+﻿@model SlickSlider.Components.Widgets.HeroSlickSlider.HeroSlickSliderViewModel
+@{
+    var slickSliderId = Guid.NewGuid().ToString();
+}
+<div class="grid-x grid-padding-y grid-margin-x grid-margin-y medium-up-2">
+    <div class="cell">
+        <div class="slider-widget sh-slider_3">
+            <div class="slider-widget__wrapper _slick-slider">
+                @foreach (var slide in Model.HeroSliderList)
+                {
+                    <div>@Html.Raw(slide.GetStringValue("ReferenceText", ""))</div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="cell">
+        <div class="fr-view">
+            <p>
+                @Html.Raw(@Model.Content)
+            </p>
+        </div>
+    </div>
+</div>
+<script src="~/scripts/slider.js"></script>
