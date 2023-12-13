@@ -1,6 +1,7 @@
 The Hero Slick Slider is a slideshow gallery that enhances the Hero Image widget. It's perfect for displaying marketing messages and creating an appealing site introduction.
 The process involves two steps: creating slides using the Atlas Image Page Type and then incorporating them into the Hero Slick Slider Widget.
 
+Installation: Install the RBT.Xperience.Core.Components.SlickSlider.1.0.0.nupkg NuGet Package to your Kentico Xperience 13 Core MVC Site.
 How to Use:-
 1.	Select where on the page you would like the widget to appear.
 2.	Go to properties of the widget
